@@ -1,4 +1,3 @@
-# playwright-viewer
 # Playwright Viewer
 
 Beautiful, lightweight dashboard for viewing Playwright test reports with advanced analytics.
@@ -17,6 +16,7 @@ In `playwright.config.js`:
 
 ```javascript
 import { defineConfig, devices } from '@playwright/test';
+import CustomReporter from 'playwright-viewer/reporter';
 
 export default defineConfig({
   reporter: [
@@ -32,6 +32,7 @@ export default defineConfig({
 
 ```javascript
 const { defineConfig } = require('@playwright/test');
+const CustomReporter from 'playwright-viewer/reporter';
 
 module.exports = defineConfig({
   reporter: [
